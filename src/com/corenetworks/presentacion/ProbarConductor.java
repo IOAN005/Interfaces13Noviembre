@@ -1,18 +1,19 @@
 package com.corenetworks.presentacion;
 
 import com.corenetworks.modelo.Coche1;
+import com.corenetworks.modelo.Conductor;
 
-public class ProbarVehiculo {
+public class ProbarConductor {
     public static void main(String[] args) {
 
+
+        Coche1 c2 = new Coche1(-1);
+        Conductor c3=new Conductor(c2);
+        System.out.println(c3.conducir());
+
     }
-    Coche1 c2=new Coche1(30);
-    int deposito;
-    if(deposito >=0){
-        System.out.println("el coche se puede mover ");
-    }else{
-        System.out.println("el coche no se mueve");
+
     }
 
 
-}
+
